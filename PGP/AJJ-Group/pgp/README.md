@@ -25,6 +25,7 @@ Es una extensión para los navegadores Google Chrome y Mozilla Firefox que es to
 ---
 
 ## 1. Instalación de Mailvelope
+
 - Abrir en el navegador la página web de Mailvelope y descargar la extensión:
 https://mailvelope.com/en
 
@@ -61,6 +62,7 @@ https://mailvelope.com/en
 - Desde el listado de claves disponible, se puede ver el datalle de cada una si se hace clic sobre la misma.
 
 ## 2. Aplicación de Mailvelope para envío de correos.
+
 - Se puede exportar una llave para el envío e integración como contacto, en otro navegador.
 
 ![Imagen 9](./img/9.png)
