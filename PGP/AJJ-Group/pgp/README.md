@@ -104,5 +104,5 @@ https://mailvelope.com/en
 
 - El contacto receptor podrá a través de la extensión de Mailvelope, desencriptar el contenido del correo una vez se haya importado su clave.
 
-![Imagen 19](./img/19.png)
+![Imagen 19](./img/19.PNG)
 
