@@ -1,6 +1,6 @@
 # GPG por linea de comandos
 <p align="center">
-    <img src="./imgs/logo-gpg.png" alt="logo" width="500"/>
+    <img src="./img/logo.png" alt="logo" width="500"/>
 </p>
 
 GPG es un software, basado en el estándar RFC4880, que firma y cifrado de código abierto que esta inspirado en PGP, se puede considerar como la alternativa OpenSource. Como lo mencionan en la pagina oficial de GPG:
