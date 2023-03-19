@@ -25,6 +25,9 @@ Es una extensión para los navegadores Google Chrome y Mozilla Firefox que es to
 ---
 
 ## Instalación de Mailvelope
+- Abrir en el navegador la página web de Mailvelope y descargar la extensión:
+https://mailvelope.com/en
+![Imagen 0](./img/0.png)
 ![Imagen 1](./img/1.png)
 ![Imagen 2](./img/2.png)
 ![Imagen 3](./img/3.png)
