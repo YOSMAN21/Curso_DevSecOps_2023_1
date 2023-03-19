@@ -61,24 +61,22 @@ https://mailvelope.com/en
 
 - Desde el listado de claves disponible, se puede ver el datalle de cada una si se hace clic sobre la misma.
 
+![Imagen 9](./img/9.png)
+
 ## 2. Aplicación de Mailvelope para envío de correos.
 
 - Se puede exportar una llave para el envío e integración como contacto, en otro navegador.
 
-![Imagen 9](./img/9.png)
+![Imagen 10](./img/10.png)
 
 - Utilizar la opción importar contactos, para agregar un archivo llave .asc
 
-![Imagen 10](./img/10.png)
+![Imagen 11](./img/11.png)
 
 - Se muestra los datos del contacto contenido en la llave que se está importando.
 
-![Imagen 11](./img/11.png)
-
-- Se puede verificar una llave por confirmación en el correo, donde con la clave se puede visualizar.
-
 ![Imagen 12](./img/12.png)
 
-
+- Se puede verificar una llave por confirmación en el correo, donde con la clave se puede visualizar.
 
 ![Imagen 13](./img/13.png)
