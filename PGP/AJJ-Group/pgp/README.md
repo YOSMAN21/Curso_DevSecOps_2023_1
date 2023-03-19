@@ -97,3 +97,7 @@ https://mailvelope.com/en
 - Al enviar el correo aparecerá la casilla para ingresar la contraseña de la clave, la cual se deberá digitar y al enviar, aparecerá un mensaje de confirmación.
 
 ![Imagen 17](./img/17.png)
+
+- Al receptor del mensaje, le llegara un correo con contenido encriptado.
+
+![Imagen 18](./img/18.png)
