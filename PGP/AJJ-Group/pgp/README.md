@@ -24,11 +24,17 @@ Es una extensión para los navegadores Google Chrome y Mozilla Firefox que es to
     - Recepción de correo firmado.
 ---
 
-## Instalación de Mailvelope
+## 1. Instalación de Mailvelope
 - Abrir en el navegador la página web de Mailvelope y descargar la extensión:
 https://mailvelope.com/en
+
 ![Imagen 0](./img/0.png)
+
+- Instalar la extensión en el navegador.
+
 ![Imagen 1](./img/1.png)
+
+- Utilizar el ícono de la extensión de Mailvelope, en el navegador, para ingresar.
 ![Imagen 2](./img/2.png)
 ![Imagen 3](./img/3.png)
 ![Imagen 4](./img/4.png)
