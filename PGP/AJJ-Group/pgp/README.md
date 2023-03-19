@@ -101,3 +101,8 @@ https://mailvelope.com/en
 - Al receptor del mensaje, le llegara un correo con contenido encriptado.
 
 ![Imagen 18](./img/18.png)
+
+- El contacto receptor podrá a través de la extensión de Mailvelope, desencriptar el contenido del correo una vez se haya importado su clave.
+
+![Imagen 19](./img/19.png)
+
