@@ -18,7 +18,7 @@ Es una extensión para los navegadores Google Chrome y Mozilla Firefox que es to
     - Generación clave pública y privada.
     - Verificación clave pública y privada.
 	
-2. Uso de Mailvelope.
+2. Aplicación de Mailvelope para envío de correos.
     - Agregar contacto por importación.
     - Envío de correo firmado.
     - Recepción de correo firmado.
@@ -35,15 +35,48 @@ https://mailvelope.com/en
 ![Imagen 1](./img/1.png)
 
 - Utilizar el ícono de la extensión de Mailvelope, en el navegador, para ingresar.
+
 ![Imagen 2](./img/2.png)
+
+- Utilizar el botón "Generar llave" para configurar la llave pública y privada.
+
 ![Imagen 3](./img/3.png)
+
+- Colocar el nombre de la llave, correo electrónico y contraseña.
+
 ![Imagen 4](./img/4.png)
+
+- Aparecerá un aviso de generación de llave, esperar unos segundos...
+
 ![Imagen 5](./img/5.png)
+
+- Una vez finalizado el proceso, aparecerá un mensaje de confirmación y la llave aparecerá en el listado.
+
 ![Imagen 6](./img/6.png)
+
+- Cuando se crea una llave, se puede utilizar la opción "Avanzado" para definir el tipo de algoritmo encriptación, el tamaño de la llave y la fecha de caducidad de la misma.
+
 ![Imagen 7](./img/7.png)
-![Imagen 8](./img/8.png)
+
+- Desde el listado de claves disponible, se puede ver el datalle de cada una si se hace clic sobre la misma.
+
+## 2. Aplicación de Mailvelope para envío de correos.
+- Se puede exportar una llave para el envío e integración como contacto, en otro navegador.
+
 ![Imagen 9](./img/9.png)
+
+- Utilizar la opción importar contactos, para agregar un archivo llave .asc
+
 ![Imagen 10](./img/10.png)
+
+- Se muestra los datos del contacto contenido en la llave que se está importando.
+
 ![Imagen 11](./img/11.png)
+
+- Se puede verificar una llave por confirmación en el correo, donde con la clave se puede visualizar.
+
 ![Imagen 12](./img/12.png)
+
+
+
 ![Imagen 13](./img/13.png)
