@@ -22,6 +22,7 @@ Es una extensión para los navegadores Google Chrome y Mozilla Firefox que es to
     - Agregar contacto por importación.
     - Envío de correo firmado.
     - Recepción de correo firmado.
+	- Descifrar el correo.
 ---
 
 ## 1. Instalación de Mailvelope
@@ -80,3 +81,19 @@ https://mailvelope.com/en
 - Se puede verificar una llave por confirmación en el correo, donde con la clave se puede visualizar.
 
 ![Imagen 13](./img/13.png)
+
+- Abrir en el navegador una cuenta de correo Gmail y utilizar el ícono de Mailvelope al lado de la opción Redactar.
+
+![Imagen 15](./img/15.png)
+
+- Aparecerá una ventana emergente para agregar el contacto importado, un asunto y un mensaje.
+
+![Imagen 14](./img/14.png)
+
+- Con el botón Opciones, se puede validar la llave que firmará el correo o agregar más llaves si se requiere.
+
+![Imagen 16](./img/16.png)
+
+- Al enviar el correo aparecerá la casilla para ingresar la contraseña de la clave, la cual se deberá digitar y al enviar, aparecerá un mensaje de confirmación.
+
+![Imagen 17](./img/17.png)
