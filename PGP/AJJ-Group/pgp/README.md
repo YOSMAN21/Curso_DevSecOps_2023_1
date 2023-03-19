@@ -1,4 +1,4 @@
-# GPG por linea de comandos
+# PGP utilizando Mailvelope
 <p align="center">
     <img src="./img/logo_pgp.png" alt="logo" width="500"/>
 </p>
