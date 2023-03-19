@@ -3,35 +3,24 @@
     <img src="./img/logo_pgp.png" alt="logo" width="500"/>
 </p>
 
-GPG es un software, basado en el estándar RFC4880, que firma y cifrado de código abierto que esta inspirado en PGP, se puede considerar como la alternativa OpenSource. Como lo mencionan en la pagina oficial de GPG:
+##¿Qué es PGP?
+PGP es programa que sirve para cifrar y descifrar datos, de tal forma que solo el destinatario legítimo pueda descifrar la información. OpenPGP es el estándar abierto basado en PGP, y el que actualmente se utiliza en todos los programas. Mailvelope es una extensión para Chrome y Firefox que nos va a permitir cifrar y descifrar e-mails de los principales proveedores como Gmail, Outlook y Yahoo Mail.
 
-> GnuPG is a complete and free implementation of the OpenPGP standard as defined by RFC4880 (also known as PGP). GnuPG allows you to encrypt and sign your data and communications; it features a versatile key management system, along with access modules for all kinds of public key directories. GnuPG, also known as GPG, is a command line tool with features for easy integration with other applications. A wealth of frontend applications and libraries are available. GnuPG also provides support for S/MIME and Secure Shell (ssh). 
-
-Existen diversos comandos que permiten realizar una gran diversidad de tareas relacionadas con el cifrado, firma y distribución de llaves.
-El uso por consola de comandos varía dependiendo de las condiciones de cada sistema operativo, pero la esencia se mantiene, ya que es un software multiplataforma.
+##¿Qué es Mailvelope?
+Es una extensión para los navegadores Google Chrome y Mozilla Firefox que es totalmente gratuita, incorpora el estándar OpenPGP para el cifrado y descifrado de texto en los correos electrónicos, pero es que además permite cifrar los archivos adjuntos de dichos e-mails. Su utilización es muy sencilla si antes has usado algún programa basado en PGP para enviar y recibir correos electrónicos, hoy en RedesZone os vamos a enseñar cómo se configura y cómo se envían los e-mails cifrados para que nadie los lea.
 
 ---
 
 ## Tabla de contenido
-1. Instalación de GPG
-    - Ubuntu/Debian
-    - Fedora/RHEL
-    - CentOS
-    - MacOS
-    - Windows
-2. Comandos básicos
-    - gpg --help
-    - gpg --version
-    - gpg --gen-key
-    - gpg --import <archivo>
-    - gpg --export --armor \<id de clave\>
-    - gpg --encrypt --recipient <id de clave> <archivo>
-    - gpg --decrypt \<archivo\>
-    - gpg --sign \<archivo\>
-    - gpg --verify \<archivo\>
-    - gpg --list-keys
-    - gpg --list-secret-keys
-3. Caso de uso
+1. Instalación de Mailvelope
+    - Adición extensión de navegador
+    - Configuración
+    - Generación clave pública y privada
+    - Verificación clave pública y privada
+2. Uso de Mailvelope
+    - Agregar contacto por importación
+    - Envío de correo firmado
+    - Recepción de correo firmado
 ---
 
 ## Instalación de GPG
