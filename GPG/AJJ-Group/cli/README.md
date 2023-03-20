@@ -3,7 +3,7 @@
     <img src="./imgs/logo-gpg.png" alt="logo" width="500"/>
 </p>
 
-GPG es un software, basado en el estándar RFC4880, que firma y cifrado de código abierto que esta inspirado en PGP, se puede considerar como la alternativa OpenSource. Como lo mencionan en la pagina oficial de GPG:
+GPG es un software, basado en el estándar RFC4880, que firma y cifrado de código abierto, que está inspirado en PGP, se puede considerar como la alternativa OpenSource. Como lo mencionan en la página oficial de GPG:
 
 > GnuPG is a complete and free implementation of the OpenPGP standard as defined by RFC4880 (also known as PGP). GnuPG allows you to encrypt and sign your data and communications; it features a versatile key management system, along with access modules for all kinds of public key directories. GnuPG, also known as GPG, is a command line tool with features for easy integration with other applications. A wealth of frontend applications and libraries are available. GnuPG also provides support for S/MIME and Secure Shell (ssh). 
 
@@ -66,7 +66,7 @@ La instalación de GPG puede variar dependiendo del sistema operativo o distribu
 ---
 
 ## Comandos básicos
-GPG posee una gran variedad de argumentos que permiten realizar diversas operaciones. A continuación se describen los comandos mas usados de GPG.  
+GPG posee una gran variedad de argumentos que permiten realizar diversas operaciones. A continuación se describen los comandos más usados de GPG.  
 
 Cabe aclarar que el uso de GPG se sustenta bajo la siguiente estructura:
 ```bash
@@ -101,7 +101,7 @@ Para mayor información acerca de todo el universo de comandos, puede consultar 
 ---
 
 ## Caso de uso
-El uso de llaves asimétricas permite dar un paso más haya en la seguridad al momento de transferir información a través de internet. Es por esto que en este ejemplo/caso de utilización, se va a ejecutar el ejercicio de encriptar un archivo, compartir la llave pública, y desencriptar el archivo a partir de la misma.
+El uso de llaves asimétricas permite dar un paso más haya en la seguridad al momento de transferir información a través de internet. Es por esto que en este ejemplo/caso de utilización, se va a ejecutar el ejercicio de encriptar un archivo, compartir la llave pública, y decodificar el archivo a partir de la misma.
 
 1. Se listan las llaves con el comando
     ```bash
@@ -114,7 +114,7 @@ El uso de llaves asimétricas permite dar un paso más haya en la seguridad al m
     ```
     Al ejecutar el comando, se inician una serie de preguntas que parametrizan la creación de las llaves.
 
-    1. Que tipo de llave se quiere crear:
+    1. Qué tipo de llave se quiere crear:
         ```bash
         gpg (GnuPG) 2.2.27; Copyright (C) 2021 Free Software Foundation, Inc.
         This is free software: you are free to change and redistribute it.
@@ -129,14 +129,14 @@ El uso de llaves asimétricas permite dar un paso más haya en la seguridad al m
         Your selection? 1
         ```
         En este caso se va a usar el algoritmo por defecto **`RSA`**.
-    2. Cual va a ser la longitud en bits de las llaves:
+    2. Cuál va a ser la longitud en bits de las llaves:
         ```bash
         RSA keys may be between 1024 and 4096 bits long.
         What keysize do you want? (3072) 4096
         Requested keysize is 4096 bits
         ```
         En este caso se va a digitar **`4096`**.
-    3. Cual va a ser el tiempo de expiración de las llaves:
+    3. Cuál va a ser el tiempo de expiración de las llaves:
         ```bash
         Please specify how long the key should be valid.
                0 = key does not expire
@@ -146,13 +146,13 @@ El uso de llaves asimétricas permite dar un paso más haya en la seguridad al m
             <n>y = key expires in n years
         Key is valid for? (0) 1
         ```
-        En este caso se va a digitar **``1``** que hace referencia a un dia como de duración de las llaves antes de que expiren. En caso de que sea una semana seria **`1w`**, etc.
+        En este caso se va a digitar **``1``** que hace referencia a un día como de duración de las llaves antes de que expiren. En caso de que sea una semana sería **`1w`**, etc.
     4. Confirmar la fecha:
         ```bash
         Key expires at Mon 20 Mar 2023 02:00:38 AM -05
         Is this correct? (y/N) y
         ```
-        Luego de seleccionar el tiempo de expiración, se muestra la fecha en que expirarían las llaves. Ademas, pide confirmación.
+        Luego de seleccionar el tiempo de expiración, se muestra la fecha en que expirarían las llaves. Además, pide confirmación.
     5. Generar la identidad del usuario
         ```bash
         GnuPG needs to construct a user ID to identify your key.
@@ -233,12 +233,12 @@ El uso de llaves asimétricas permite dar un paso más haya en la seguridad al m
     sub   rsa4096 2023-03-19 [E] [expires: 2023-03-20]
     ```
     La **fingerprint** generada es **`7E09B594444474318E1308405FD5273BA77B4225`**
-4. Se debe validar la existencia del archivo, su correcto nombre y ruta para realizar la encriptarían. En este caso el comando para listar los archivos y carpetas es **`ls`**. De esta manera de pueden observar los archivos:
+4. Se debe validar la existencia del archivo, su correcto nombre y ruta para realizar la encriptarían. En este caso el comando para listar los archivos y carpetas es **`ls`**. De esta manera se pueden observar los archivos:
     ```bash
     ex@DESKTOP:~$ ls
     archivo_secreto.txt
     ```
-    Para el ejemplo se usara **`archivo_secreto.txt`**
+    Para el ejemplo se usará **`archivo_secreto.txt`**
 5. Se encripta un archivo a partir de la llave creada con el comando:
     ```bash
     gpg --ecrypt archivo_secreto.txt
@@ -251,12 +251,12 @@ El uso de llaves asimétricas permite dar un paso más haya en la seguridad al m
 
     Enter the user ID.  End with an empty line: johndow@prueballave.com
     ```
-    Posteriormente GPG confirma la llave con la que se encriptara el archivo.
+    Posteriormente, GPG confirma la llave con la que se encriptara el archivo.
     ```bash
     Current recipients:
     rsa4096/0AD29FAF29762DFC 2023-03-19 "John Doe (Prueba diploomado) <johndow@prueballave.com>"
     ```
-6. Una vez encriptado el archivo, se generara uno nuevo con el mismo nombre, pero con una extension **`.gpg`**:
+6. Una vez encriptado el archivo, se generará uno nuevo con el mismo nombre, pero con una extensión **`.gpg`**:
     ```bash
     ex@DESKTOP-UNC67M2:~$ ls
     archivo_secreto.txt  archivo_secreto.txt.gpg
@@ -278,10 +278,10 @@ El uso de llaves asimétricas permite dar un paso más haya en la seguridad al m
     6AO�wR����}�b����k���U�ҊN�O�5[��r�F���٬�����h�S�)�j��        �0*��C_1Z�e��!#�Q��
     ```
 7. *(Opcional)*  
-Existen varias formas de compartir las llaves publicas. Las alternativas mas comunes son a traves de un servidor publico de llaves pgp/gpg o mediante el envío de la llave publica de forma manual.
-    - Servidor de llaves publicas  
-    1. Se debe localizar algún servidor publico donde se quiera subir la llave. Hay varias alternativas como [https://keys.openpgp.org/](https://keys.openpgp.org/), [https://keyserver.pgp.com](https://keyserver.pgp.com), [https://keyserver.ubuntu.com](https://keyserver.ubuntu.com), etc.
-    2. En este caso se hará uso del servidor publico de Ubuntu.
+Existen varias formas de compartir las llaves públicas. Las alternativas más comunes son a través de un servidor público de llaves pgp/gpg o mediante el envío de la llave pública de forma manual.
+    - Servidor de llaves públicas  
+    1. Se debe localizar algún servidor público  donde se quiera subir la llave. Hay varias alternativas como [https://keys.openpgp.org/](https://keys.openpgp.org/), [https://keyserver.pgp.com](https://keyserver.pgp.com), [https://keyserver.ubuntu.com](https://keyserver.ubuntu.com), etc.
+    2. En este caso se hará uso del servidor público de Ubuntu.
     3. Para subir la llave al servidor se ejecuta el siguiente comando:
         ```bash
         gpg --keyserver hkp://keyserver.ubuntu.com --send-keys 7E09B594444474318E1308405FD5273BA77B4225
@@ -296,7 +296,7 @@ Existen varias formas de compartir las llaves publicas. Las alternativas mas com
         ![Server ubuntu gpg](./imgs/server-gpg-1.png)
         
         Y se realiza la búsqueda por algún identificador de la llave, en este caso por el correo electrónico.
-    5. El resultado de la búsqueda es la información de la llave relacionada, donde se puede ver todos los datos de la llave publica.
+    5. El resultado de la búsqueda es la información de la llave relacionada, donde se puede ver todos los datos de la llave pública.
 
         ![Server ubuntu gpg](./imgs/server-gpg-2.png)
 
@@ -312,12 +312,12 @@ Existen varias formas de compartir las llaves publicas. Las alternativas mas com
         ```
         Lo que significa que la llave fue descargada exitosamente.
 
-    - Exportar/importar llave publica
+    - Exportar/importar llave pública
     1. Se debe ejecutar el siguiente comando:
         ```bash
         gpg --armor --export johndow@prueballave.com
         ```
-        El cual genera imprime por consola la llave publica:
+        El cual genera imprime por consola la llave pública:
         ```bash
         -----BEGIN PGP PUBLIC KEY BLOCK-----
 
@@ -376,26 +376,26 @@ Existen varias formas de compartir las llaves publicas. Las alternativas mas com
         ```bash
         gpg --armor --export johndow@prueballave.com > llave.asc
         ```
-        Lo que crea un archivo con el nombre llave.asc el cual contiene la llave publica y que se puede compartir por algún medio, ya sea correo electrónico, o mensajería instantánea.
+        Lo que crea un archivo con el nombre llave.asc el cual contiene la llave pública y que se puede compartir por algún medio, ya sea correo electrónico, o mensajería instantánea.
 
-    2. Para importar una llave publica descargar por algún medio, se debe ejecutar el siguiente comando:
+    2. Para importar una llave pública descargar por algún medio, se debe ejecutar el siguiente comando:
         ```bash
         gpg --import llave.asc
         ```
-        Se debe relacionar el nombre del archivo que contiene la llave publica.
+        Se debe relacionar el nombre del archivo que contiene la llave pública.
         El comando dará como resultado lo siguiente:
         ```bash
         gpg: key 5FD5273BA77B4225: "John Doe (Prueba diploomado) <johndow@prueballave.com>" not changed
         gpg: Total number processed: 1
         gpg:              unchanged: 1
         ```
-        Que denota que no hubo errores, por lo tanto la llave ya estaría importada en la lista del computador.
+        Que denota que no hubo errores, por lo tanto, la llave ya estaría importada en la lista del computador.
 
-8. Para desencriptar un archivo .gpg, se hace uso de la llave privada. Este proceso funciona solamente si el archivo a desencriptar fue encriptado con alguna llave publica de nuestra propiedad. El comando usado para desencriptar es:
+8. Para decodificar un archivo .gpg, se hace uso de la llave privada. Este proceso funciona solamente si el archivo a decodificar fue encriptado con alguna llave pública de nuestra propiedad. El comando usado para decodificar es:
     ```bash
     gpg --decrypt archivo_secreto.txt.gpg
     ```
-    Este comando arrojara por consola la información del proceso de encriptado y  el contenido del archivo
+    Este comando arrojará por consola la información del proceso de encriptado y  el contenido del archivo
     ```bash
     gpg: encrypted with 4096-bit RSA key, ID 0AD29FAF29762DFC, created 2023-03-19
       "John Doe (Prueba diploomado) <johndow@prueballave.com>"
@@ -407,7 +407,7 @@ Existen varias formas de compartir las llaves publicas. Las alternativas mas com
     ```
     Esto creara un archivo con el nombre **`archivo_desencriptado.txt`** y su respectivo contenido.
 
-    *Nota: Este comando solicita digitar la contraseña de las llaves para realizar la descriptación*
+    *Nota: Este comando solicita digitar la contraseña de las llaves para realizar la decodificación*
 
 ---
 
