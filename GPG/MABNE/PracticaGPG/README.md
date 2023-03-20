@@ -1,5 +1,5 @@
 # El cifrado PGP en Gmail y la extensión Mailvelope para Firefox y Chrome
-
+### Inicio edición generada por el usuario NairoBoom
 ## ¿Qué es Mailvelope?
 ![](img/logo.svg)
 Es una extensión para los navegadores Google Chrome y Mozilla Firefox que es totalmente gratuita, incorpora el estándar OpenPGP para el cifrado y descifrado de texto en los correos electrónicos, pero es que además permite cifrar los archivos adjuntos de dichos e-mails. Su utilización es muy sencilla si antes has usado algún programa basado en PGP para enviar y recibir correos electrónicos, hoy en RedesZone os vamos a enseñar cómo se configura y cómo se envían los e-mails cifrados para que nadie los lea.
@@ -18,6 +18,8 @@ Es una extensión para los navegadores Google Chrome y Mozilla Firefox que es to
 4. Al generar la llave, nos aparece en la administración de esta, tal cual como se muestra a continuación:
 
 ![](img/5.JPG)
+
+### Fin edición Usuario NairoBoom 
 
 
 
