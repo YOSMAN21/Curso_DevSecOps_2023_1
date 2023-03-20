@@ -295,4 +295,12 @@ El uso de llaves asimétricas permite dar un paso más haya en la seguridad al m
     Esto creara un archivo con el nombre **`archivo_desencriptado.txt`** y su respectivo contenido.
 
     *Nota: Este comando solicita digitar la contraseña de las llaves para realizar la descriptación*
-9. 
+
+---
+
+De esta manera se puede observar como se hace uso de gpg mediante la consola de comandos. El uso de la misma puede variar entre sistemas operativos y/o shells, pero la esencia es la misma, proteger al mundo.
+
+<p align="center">
+    <img src="./imgs/logo-linux.png" alt="logo" width="250"/>
+    <img src="./imgs/logo-open-source.png" alt="logo" width="250"/>
+</p>
