@@ -232,4 +232,67 @@ El uso de llaves asimétricas permite dar un paso más haya en la seguridad al m
     uid           [ultimate] John Doe (Prueba diploomado) <johndow@prueballave.com>
     sub   rsa4096 2023-03-19 [E] [expires: 2023-03-20]
     ```
-4. 
+    La **fingerprint** generada es **`7E09B594444474318E1308405FD5273BA77B4225`**
+4. Se debe validar la existencia del archivo, su correcto nombre y ruta para realizar la encriptarían. En este caso el comando para listar los archivos y carpetas es **`ls`**. De esta manera de pueden observar los archivos:
+    ```bash
+    ex@DESKTOP:~$ ls
+    archivo_secreto.txt
+    ```
+    Para el ejemplo se usara **`archivo_secreto.txt`**
+5. Se encripta un archivo a partir de la llave creada con el comando:
+    ```bash
+    gpg --ecrypt archivo_secreto.txt
+    ```
+    GPG pedirá un id para reconocer la llave con la que se desea encriptar el archivo. Se digita el correo:
+    ```bash
+    You did not specify a user ID. (you may use "-r")
+
+    Current recipients:
+
+    Enter the user ID.  End with an empty line: johndow@prueballave.com
+    ```
+    Posteriormente GPG confirma la llave con la que se encriptara el archivo.
+    ```bash
+    Current recipients:
+    rsa4096/0AD29FAF29762DFC 2023-03-19 "John Doe (Prueba diploomado) <johndow@prueballave.com>"
+    ```
+6. Una vez encriptado el archivo, se generara uno nuevo con el mismo nombre, pero con una extension **`.gpg`**:
+    ```bash
+    ex@DESKTOP-UNC67M2:~$ ls
+    archivo_secreto.txt  archivo_secreto.txt.gpg
+    ```
+    Si se trata de leer el contenido del archivo, este será ilegible de forma natural:
+    ```bash
+    cat archivo_secreto.txt.gpg
+    �
+    
+    �z��F�Ւ��=�]SX��hb�S֯Ё��1w���o�E�9��zW�iO�s�ԗI�h2�_Á�0�;��zx        �zjE
+                                            �Z�1����L���ř�Hx���W Ӱ��79"6
+                                                                            �p��ݙM阂�[��p��9�^-
+    �k/�T��ѫ�O��ps��&���3�                                                                   OI���p��q���!��A�<]�T�+"S�A��.�5=Q����٭]���                         ٵ������dr��c�VV��� ۞�s        1潠ս/H=x�zg��6�d     �y�N� <�O|�@�.�A�.��eľ�#�_���Wbi�9�~����?��GCe���"��+�:o�� a�@b��n����Yi9�eDޡU(J�O�"*�+� ���
+                                            ��|j���E�[��k�Y-����
+                                                                    �rL��zBx����t����=R�����(�YF����a3n
+    v
+    ���������U"�g5
+    K�����-��B��G���GG����\���
+    6AO�wR����}�b����k���U�ҊN�O�5[��r�F���٬�����h�S�)�j��        �0*��C_1Z�e��!#�Q��
+    ```
+7. *(Opcional)*. enviar y descargar las llaves del correo o de un server
+8. Para desencriptar un archivo .gpg, se hace uso de la llave privada. Este proceso funciona solamente si el archivo a desencriptar fue encriptado con alguna llave publica de nuestra propiedad. El comando usado para desencriptar es:
+    ```bash
+    gpg --decrypt archivo_secreto.txt.gpg
+    ```
+    Este comando arrojara por consola la información del proceso de encriptado y  el contenido del archivo
+    ```bash
+    gpg: encrypted with 4096-bit RSA key, ID 0AD29FAF29762DFC, created 2023-03-19
+      "John Doe (Prueba diploomado) <johndow@prueballave.com>"
+    Mensaje secreto :D
+    ```
+    En caso de que se quiera guardar el contenido en un archivo, se debe ejecutar el comando de la siguiente manera:
+    ```bash
+    gpg --decrypt archivo_secreto.txt.gpg > archivo_desencriptado.txt
+    ```
+    Esto creara un archivo con el nombre **`archivo_desencriptado.txt`** y su respectivo contenido.
+
+    *Nota: Este comando solicita digitar la contraseña de las llaves para realizar la descriptación*
+9. 
