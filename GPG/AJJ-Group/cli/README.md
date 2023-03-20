@@ -278,7 +278,7 @@ El uso de llaves asimétricas permite dar un paso más haya en la seguridad al m
     6AO�wR����}�b����k���U�ҊN�O�5[��r�F���٬�����h�S�)�j��        �0*��C_1Z�e��!#�Q��
     ```
 7. *(Opcional)*  
-Existen varias formas de compartir las llaves publicas. Las alternativas mas comunes son a traves de un servidor publico de llaves pgp/gpg o mediante correo electrónico.
+Existen varias formas de compartir las llaves publicas. Las alternativas mas comunes son a traves de un servidor publico de llaves pgp/gpg o mediante el envío de la llave publica de forma manual.
     - Servidor de llaves publicas  
     1. Se debe localizar algún servidor publico donde se quiera subir la llave. Hay varias alternativas como [https://keys.openpgp.org/](https://keys.openpgp.org/), [https://keyserver.pgp.com](https://keyserver.pgp.com), [https://keyserver.ubuntu.com](https://keyserver.ubuntu.com), etc.
     2. En este caso se hará uso del servidor publico de Ubuntu.
@@ -311,8 +311,85 @@ Existen varias formas de compartir las llaves publicas. Las alternativas mas com
         gpg:              unchanged: 1
         ```
         Lo que significa que la llave fue descargada exitosamente.
-    - Correo electrónico
 
+    - Exportar/importar llave publica
+    1. Se debe ejecutar el siguiente comando:
+        ```bash
+        gpg --armor --export johndow@prueballave.com
+        ```
+        El cual genera imprime por consola la llave publica:
+        ```bash
+        -----BEGIN PGP PUBLIC KEY BLOCK-----
+
+        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
+        =5iNW
+        -----END PGP PUBLIC KEY BLOCK-----
+        ```
+        Para guardar la llave en un archivo, se debe ejecutar una modificación del comando anterior, de forma que:
+        ```bash
+        gpg --armor --export johndow@prueballave.com > llave.asc
+        ```
+        Lo que crea un archivo con el nombre llave.asc el cual contiene la llave publica y que se puede compartir por algún medio, ya sea correo electrónico, o mensajería instantánea.
+
+    2. Para importar una llave publica descargar por algún medio, se debe ejecutar el siguiente comando:
+        ```bash
+        gpg --import llave.asc
+        ```
+        Se debe relacionar el nombre del archivo que contiene la llave publica.
+        El comando dará como resultado lo siguiente:
+        ```bash
+        gpg: key 5FD5273BA77B4225: "John Doe (Prueba diploomado) <johndow@prueballave.com>" not changed
+        gpg: Total number processed: 1
+        gpg:              unchanged: 1
+        ```
+        Que denota que no hubo errores, por lo tanto la llave ya estaría importada en la lista del computador.
 
 8. Para desencriptar un archivo .gpg, se hace uso de la llave privada. Este proceso funciona solamente si el archivo a desencriptar fue encriptado con alguna llave publica de nuestra propiedad. El comando usado para desencriptar es:
     ```bash
