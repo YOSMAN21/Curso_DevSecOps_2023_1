@@ -277,7 +277,43 @@ El uso de llaves asimétricas permite dar un paso más haya en la seguridad al m
     K�����-��B��G���GG����\���
     6AO�wR����}�b����k���U�ҊN�O�5[��r�F���٬�����h�S�)�j��        �0*��C_1Z�e��!#�Q��
     ```
-7. *(Opcional)*. enviar y descargar las llaves del correo o de un server
+7. *(Opcional)*  
+Existen varias formas de compartir las llaves publicas. Las alternativas mas comunes son a traves de un servidor publico de llaves pgp/gpg o mediante correo electrónico.
+    - Servidor de llaves publicas  
+    1. Se debe localizar algún servidor publico donde se quiera subir la llave. Hay varias alternativas como [https://keys.openpgp.org/](https://keys.openpgp.org/), [https://keyserver.pgp.com](https://keyserver.pgp.com), [https://keyserver.ubuntu.com](https://keyserver.ubuntu.com), etc.
+    2. En este caso se hará uso del servidor publico de Ubuntu.
+    3. Para subir la llave al servidor se ejecuta el siguiente comando:
+        ```bash
+        gpg --keyserver hkp://keyserver.ubuntu.com --send-keys 7E09B594444474318E1308405FD5273BA77B4225
+        ```
+        En el cual se especifica el servidor, con el protocolo **`hkp`**, y el fingerprint de la llave.
+        Si la subida es exitosa, se recibirá una respuesta del tipo
+        ```bash
+        gpg: sending key 5FD5273BA77B4225 to hkp://keyserver.ubuntu.com
+        ```
+    4. Para verificar si la llave fue cargada, se accede a la url del servidor
+
+        ![Server ubuntu gpg](./imgs/server-gpg-1.png)
+        
+        Y se realiza la búsqueda por algún identificador de la llave, en este caso por el correo electrónico.
+    5. El resultado de la búsqueda es la información de la llave relacionada, donde se puede ver todos los datos de la llave publica.
+
+        ![Server ubuntu gpg](./imgs/server-gpg-2.png)
+
+    6. Para descargar una llave, se usa el siguiente comando:  
+        ```bash
+        gpg --keyserver hkp://keyserver.ubuntu.com --recv 5fd5273ba77b4225
+        ```
+        Al cual se le especifica el servidor y el fingerprint. Esto arroja, por consola, lo siguiente:
+        ```bash
+        gpg: key 5FD5273BA77B4225: "John Doe (Prueba diploomado) <johndow@prueballave.com>" not changed
+        gpg: Total number processed: 1
+        gpg:              unchanged: 1
+        ```
+        Lo que significa que la llave fue descargada exitosamente.
+    - Correo electrónico
+
+
 8. Para desencriptar un archivo .gpg, se hace uso de la llave privada. Este proceso funciona solamente si el archivo a desencriptar fue encriptado con alguna llave publica de nuestra propiedad. El comando usado para desencriptar es:
     ```bash
     gpg --decrypt archivo_secreto.txt.gpg
