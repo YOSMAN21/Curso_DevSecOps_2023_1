@@ -13,13 +13,13 @@ El uso por consola de comandos varía dependiendo de las condiciones de cada sis
 ---
 
 ## Tabla de contenido
-1. Instalación de GPG
+1. [Instalación de GPG](#instalación-de-gpg)
     - Ubuntu/Debian
     - Fedora/RHEL
     - CentOS
     - MacOS
     - Windows
-2. Comandos básicos
+2. [Comandos básicos](#comandos-básicos)
     - gpg --help
     - gpg --version
     - gpg --gen-key
@@ -31,7 +31,12 @@ El uso por consola de comandos varía dependiendo de las condiciones de cada sis
     - gpg --verify \<archivo\>
     - gpg --list-keys
     - gpg --list-secret-keys
-3. Caso de uso
+3. [Caso de uso](#caso-de-uso)
+    - Listar las llaves
+    - Generar llaves
+    - Encriptar archivos
+    - Subir o compartir llaves
+    - Decodificar archivos
 ---
 
 ## Instalación de GPG
