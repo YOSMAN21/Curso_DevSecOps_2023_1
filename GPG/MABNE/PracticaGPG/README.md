@@ -19,6 +19,22 @@ Es una extensión para los navegadores Google Chrome y Mozilla Firefox que es to
 
 ![](img/5.JPG)
 
+5. Al dar click sobre la llave podemos ver todos los dettales de la misma:
+
+![](img/1B.png)
+
+![](img/2B.png)
+
+6. Ahora para enviar correos , daremos click en el icono especial que nos muestra en gmail , despues de llos tendremos una ventana especial como se muestra a continuaciòn :
+
+![](img/3B.png)
+
+![](img/4B.png)
+
+7. el mensaje cifrado se ve de esta forma una vez enviado  :
+
+![](img/5B.png)
+
 ### Fin edición Usuario NairoBoom 
 
 ### Proceso de instalación en Microsoft Edge
@@ -69,3 +85,79 @@ Es una extensión para los navegadores Google Chrome y Mozilla Firefox que es to
 ![](img/15E.png)
 
 ## Fin edición Usuario EdwardGM07
+
+### Proceso de instalación y configuracion en Firefox
+
+1. Accedemos a la página oficial de Mailwelope con el siguiente link https://mailvelope.com/en/ y le damos en el botón de "dowload Mailvelope" para instalar la extensión en el navegador
+
+![](img/firefox/1.png)
+
+2.El botón nos dirigirá a la página donde podremos agregar la extensión según el navegador que estemos. Le damos en "Agregar a Firefox"
+
+![](img/firefox/2.png)
+
+3. En la siguiente ventana le damos en añadir 
+
+![](img/firefox/3.png)
+
+4. Aparecera la sigueinte ventana en donde le vamos a dar en "Aceptar"
+
+![](img/firefox/4.png)
+
+5. Busca el complemento en la barra superior del navegador y da click en "Iniciemos".
+
+![](img/firefox/5.png)
+
+6. Buscamos la opcion que diga "Generar llave"
+
+![](img/firefox/6.png)
+
+7. A continuacion se llena toda la información
+
+![](img/firefox/7.png)
+
+8. Ya llenada la informacion le damos en boton "Generar" y comenzara a generar la llave
+
+![](img/firefox/8.png)
+
+9. Ahora se puede administrar las llaves creadas o las publicas para la encriptación
+
+![](img/firefox/9.png)
+
+10. Ingresamos a la llave que se acabo de crear para obtener toda la información, y a continuación le damos en "Exportar"
+
+![](img/firefox/10.png)
+
+11. Te mostrara la llave pública y privada, para compartir la pública le damos en "Descargar"
+
+![](img/firefox/11.png)
+
+Y podremos ver que se descargo
+
+![](img/firefox/11-1.png)
+
+12. Ahorra enviaremos un correo seguro, para esto nos dirigimos a gmail y enviaremos un correo. Al darle en redactar nos aparecere la siguiente ventana con el icono de Mailvelope.
+
+![](img/firefox/12.png)
+
+13. Le damos en el icono y nos aparece la siguiente ventana, ingresamos el receptor y el mensaje que queramos cifrar. El receptor tiene que tener la llave publica para poder ver el mensaje.
+
+![](img/firefox/13.png)
+
+14. Simplemente le damos en "Enviar"
+
+![](img/firefox/14.png)
+
+15. Llegara el correo en donde le daremos clink en el icono
+
+![](img/firefox/15.png)
+
+16. Se nos abrira la siguiente pantalla en donde tenemos que colocar la llave.
+
+![](img/firefox/16.png)
+
+17. Y se nos mostrara el mensaje
+
+![](img/firefox/17.png)
+
+### Fin edición Usuario Mninoquitian 
