@@ -69,3 +69,21 @@ Es una extensión para los navegadores Google Chrome y Mozilla Firefox que es to
 ![](img/15E.png)
 
 ## Fin edición Usuario EdwardGM07
+
+### Proceso de instalación y configuracion en Firefox
+
+1. Accedemos a la página oficial de Mailwelope con el siguiente link https://mailvelope.com/en/ y le damos en el botón de "dowload Mailvelope" para instalar la extensión en el navegador
+
+![](img/firefox/1.png)
+
+2.El botón nos dirigirá a la página donde podremos agregar la extensión según el navegador que estemos. Le damos en "Agregar a Firefox"
+
+![](img/firefox/2.png)
+
+3. En la siguiente ventana le damos en añadir 
+
+![](img/firefox/3.png)
+
+4. Aparecera la sigueinte ventana en donde le vamos a dar en "Aceptar"
+
+![](img/firefox/4.png)
