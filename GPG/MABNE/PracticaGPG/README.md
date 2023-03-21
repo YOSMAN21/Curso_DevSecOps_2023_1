@@ -148,3 +148,16 @@ Y podremos ver que se descargo
 
 ![](img/firefox/14.png)
 
+15. Llegara el correo en donde le daremos clink en el icono
+
+![](img/firefox/15.png)
+
+16. Se nos abrira la siguiente pantalla en donde tenemos que colocar la llave.
+
+![](img/firefox/16.png)
+
+17. Y se nos mostrara el mensaje
+
+![](img/firefox/17.png)
+
+### Fin edición Usuario Mninoquitian 
