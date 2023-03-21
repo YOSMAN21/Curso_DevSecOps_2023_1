@@ -19,6 +19,22 @@ Es una extensión para los navegadores Google Chrome y Mozilla Firefox que es to
 
 ![](img/5.JPG)
 
+5. Al dar click sobre la llave podemos ver todos los dettales de la misma:
+
+![](img/1B.png)
+
+![](img/2B.png)
+
+6. Ahora para enviar correos , daremos click en el icono especial que nos muestra en gmail , despues de llos tendremos una ventana especial como se muestra a continuaciòn :
+
+![](img/3B.png)
+
+![](img/4B.png)
+
+7. el mensaje cifrado se ve de esta forma una vez enviado  :
+
+![](img/5B.png)
+
 ### Fin edición Usuario NairoBoom 
 
 ### Proceso de instalación en Microsoft Edge
