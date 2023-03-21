@@ -136,4 +136,15 @@ Y podremos ver que se descargo
 
 ![](img/firefox/11-1.png)
 
-12.
+12. Ahorra enviaremos un correo seguro, para esto nos dirigimos a gmail y enviaremos un correo. Al darle en redactar nos aparecere la siguiente ventana con el icono de Mailvelope.
+
+![](img/firefox/12.png)
+
+13. Le damos en el icono y nos aparece la siguiente ventana, ingresamos el receptor y el mensaje que queramos cifrar. El receptor tiene que tener la llave publica para poder ver el mensaje.
+
+![](img/firefox/13.png)
+
+14. Simplemente le damos en "Enviar"
+
+![](img/firefox/14.png)
+
