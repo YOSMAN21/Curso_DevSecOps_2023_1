@@ -103,3 +103,37 @@ Es una extensión para los navegadores Google Chrome y Mozilla Firefox que es to
 4. Aparecera la sigueinte ventana en donde le vamos a dar en "Aceptar"
 
 ![](img/firefox/4.png)
+
+5. Busca el complemento en la barra superior del navegador y da click en "Iniciemos".
+
+![](img/firefox/5.png)
+
+6. Buscamos la opcion que diga "Generar llave"
+
+![](img/firefox/6.png)
+
+7. A continuacion se llena toda la información
+
+![](img/firefox/7.png)
+
+8. Ya llenada la informacion le damos en boton "Generar" y comenzara a generar la llave
+
+![](img/firefox/8.png)
+
+9. Ahora se puede administrar las llaves creadas o las publicas para la encriptación
+
+![](img/firefox/9.png)
+
+10. Ingresamos a la llave que se acabo de crear para obtener toda la información, y a continuación le damos en "Exportar"
+
+![](img/firefox/10.png)
+
+11. Te mostrara la llave pública y privada, para compartir la pública le damos en "Descargar"
+
+![](img/firefox/11.png)
+
+Y podremos ver que se descargo
+
+![](img/firefox/11-1.png)
+
+12.
